@@ -1,13 +1,13 @@
 # webpack-demo
 
-# 项目运行
-## 克隆仓库
+## 项目运行
+### 克隆仓库
 git clone https://github.com/Lkkkkkkg/webpack-demo.git
-## 进入相对应demo文件夹
+### 进入相对应demo文件夹
 cd demo01
-## 安装依赖
+### 安装依赖
 npm install
-## 启动
+### 启动
 npm run build
 
 demo01 - 初步安装webpack, 简单配置了webpack
