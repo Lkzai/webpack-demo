@@ -1,0 +1,1 @@
+document.write('<h1>Message From Index.js</h1>');
