@@ -23,4 +23,6 @@ demo04 - 对加载字体进行了配置
 
 demo05 - 对加载数据文件(JSON, XML, CSV等)进行了配置
 
-demo06 - 配置了 HtmlWebpackPlugin 插件, 实现生成模板html, 自动引用出口文件
+demo06 - 配置了HtmlWebpackPlugin插件, 实现生成模板html, 自动引用出口文件
+
+demo07 - 配置了CleanWebpackPlugin插件, 实现每次构建前dist文件夹的清理功能
