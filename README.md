@@ -1,4 +1,5 @@
 # webpack-demo
+记录自己学习webpack时练手的demo
 
 ## 项目运行
 ```
