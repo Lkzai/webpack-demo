@@ -18,3 +18,5 @@ demo01 - 初步安装webpack, 简单配置了webpack
 demo02 - 对加载css进行了配置
 
 demo03 - 对加载图片进行了配置
+
+demo04 - 对加载字体进行了配置
