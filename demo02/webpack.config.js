@@ -11,10 +11,6 @@ module.exports = {
             {
                 test: /\.css$/, //配置要处理的文件格式，一般使用正则表达式匹配
                 use: ['style-loader', 'css-loader'] //使用的加载器名称
-            },
-            {
-                test: /\.(png|svg|jpg|gif)$/, //同上
-                use: ['url-loader'] //同上
             }
         ]
     }
