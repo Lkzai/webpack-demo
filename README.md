@@ -37,3 +37,5 @@ demo10 - 使用了HMR(模块热替换)功能, 实现了修改模块不用重载�
 demo11 - 初步配置了react
 
 demo12 - 初步配置了sass
+
+demo13 - 使用了ExtractTextWebpackPlugin插件, 实现了把css独立分离到一个css文件夹里
