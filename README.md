@@ -40,4 +40,4 @@ demo12 - 初步配置了sass
 
 demo13 - 使用了ExtractTextWebpackPlugin插件, 实现了把css独立分离到一个css文件夹里
 
-demo13 - 构建了多页面, 实现了把多页面的js和css分别分离到js和css文件夹里
+demo14 - 构建了多页面, 实现了把多页面的js和css分别分离到js和css文件夹里
