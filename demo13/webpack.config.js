@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js', //入口文件
@@ -36,7 +37,13 @@ module.exports = {
             title: 'Form HtmlWebpackPlugin', //设置生成的HTML的title
             template: "./src/template.html",
         }),
-        new ExtractTextPlugin("css/styles.css") //配置放css目录
+        new ExtractTextPlugin("css/styles.css"), //配置放css目录
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/g, //一个正则表达式，指示应优化\最小化的资产的名称。提供的正则表达式针对配置中ExtractTextPlugin实例导出的文件的文件名运行，而不是源CSS文件的文件名。默认为/\.css$/g
+            cssProcessor: require('cssnano'), //用于优化\最小化CSS的CSS处理器，默认为cssnano。这应该是一个跟随cssnano.process接口的函数（接收CSS和选项参数并返回一个Promise）。
+            cssProcessorOptions: { safe: true, discardComments: { removeAll: true } }, //传递给cssProcessor的选项，默认为{}
+            canPrint: true //一个布尔值，指示插件是否可以将消息打印到控制台，默认为true
+        })
     ],
     output: {
         filename: 'bundle.js', //根据入口文件输出不同出口文件
