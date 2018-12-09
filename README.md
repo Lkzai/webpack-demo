@@ -10,8 +10,8 @@ cd demo01
 安装依赖
 npm install
 启动(两种)
-npm run build //demo01 - demo08 
-npm run dev //demo09 - XX
+npm run build //demo01 - demo08 | demo13 - demoXX
+npm run dev //demo09 - demo12
 ```
 
 demo01 - 初步安装webpack, 简单配置了webpack
