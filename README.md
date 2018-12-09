@@ -9,10 +9,9 @@ git clone https://github.com/Lkkkkkkg/webpack-demo.git
 cd demo01
 安装依赖
 npm install
-demo01 - demo08启动
-npm run build
-demo09 - demo  启动
-npm run dev
+启动(两种)
+npm run build //demo01 - demo08 
+npm run dev //demo09 - XX
 ```
 
 demo01 - 初步安装webpack, 简单配置了webpack
@@ -31,4 +30,4 @@ demo07 - 配置了CleanWebpackPlugin插件, 实现每次构建前dist文件夹�
 
 demo08 - 使用了source map功能, 实现了跟踪源文件错误的功能
 
-demo08 - 使用了webpack-dev-serve服务器, 实现了代码修改自动重载功能
+demo09 - 使用了webpack-dev-serve服务器, 实现了代码修改自动重载功能
