@@ -33,3 +33,7 @@ demo08 - 使用了source map功能, 实现了跟踪源文件错误的功能
 demo09 - 使用了webpack-dev-serve服务器, 实现了代码修改自动重载功能
 
 demo10 - 使用了HMR(模块热替换)功能, 实现了修改模块不用重载功能
+
+demo11 - 初步配置了react
+
+demo12 - 初步配置了sass
