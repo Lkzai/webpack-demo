@@ -10,8 +10,8 @@ cd demo01
 安装依赖
 npm install
 启动(两种)
-npm run build //demo01 - demo08 
-npm run dev //demo09 - XX
+npm run build //demo01 - demo08 | demo13 - demoXX
+npm run dev //demo09 - demo12
 ```
 
 demo01 - 初步安装webpack, 简单配置了webpack
@@ -39,3 +39,5 @@ demo11 - 初步配置了react
 demo12 - 初步配置了sass
 
 demo13 - 使用了ExtractTextWebpackPlugin插件, 实现了把css独立分离到一个css文件夹里
+
+demo14 - 构建了多页面, 实现了把多页面的js和css分别分离到js和css文件夹里
