@@ -43,3 +43,5 @@ demo13 - 使用了ExtractTextWebpackPlugin插件, 实现了把css独立分离到
 demo14 - 构建了多页面, 实现了把多页面的js和css分别分离到js和css文件夹里
 
 demo15 - 使用SplitChunksPlugin插件, 实现了提取公共js和css
+
+demo16 - 使用ReactHotLoader插件, 实现了react的热替换功能
