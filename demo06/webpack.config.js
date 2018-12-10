@@ -10,7 +10,6 @@ module.exports = {
     plugins: [ //webpack 通过 plugins 实现各种功能, 比如 html-webpack-plugin 使用模版生成 html 文件
         new HtmlWebpackPlugin({
             filename: 'index.html', //设置生成的HTML文件的名称, 支持指定子目录，如：assets/admin.html
-            title: 'Form HtmlWebpackPlugin', //设置生成的HTML的title
         })
     ],
     output: {

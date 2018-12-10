@@ -13,8 +13,6 @@ module.exports = {
         new CleanWebpackPlugin(['dist']), //设置清除的目录
         new HtmlWebpackPlugin({
             filename: 'index.html', //设置生成的HTML文件的名称, 支持指定子目录，如：assets/admin.html
-            title: 'Form HtmlWebpackPlugin', //设置生成的HTML的title
-        })
     ],
     output: {
         filename: '[name].bundle.js', //根据入口文件输出不同出口文件

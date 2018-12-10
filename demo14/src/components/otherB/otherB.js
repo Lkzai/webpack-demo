@@ -1,14 +1,6 @@
-import React, { Component } from 'react';
-import ReactDom from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import App from './App'
 import './otherB.scss'
 
-class App extends Component {
-    render() {
-        return <h1> B </h1>
-    }
-}
-
-ReactDom.render(
-    <App />,
-    document.getElementById('root')
-);
+render(<App />, document.getElementById("root"))
