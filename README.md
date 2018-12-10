@@ -10,8 +10,8 @@ cd demo01
 安装依赖
 npm install
 启动(两种)
-npm run build //demo01 - demo08 | demo13 - demoXX
-npm run dev //demo09 - demo12
+npm run build //demo01 - demo08 | demo13 - demo15 | demo17 - demoXX
+npm run dev //demo09 - demo12 | demo16 - demoXX
 ```
 
 demo01 - 初步安装webpack, 简单配置了webpack
@@ -45,3 +45,5 @@ demo14 - 构建了多页面, 实现了把多页面的js和css分别分离到js�
 demo15 - 使用SplitChunksPlugin插件, 实现了提取公共js和css
 
 demo16 - 使用ReactHotLoader插件, 实现了react的热替换功能
+
+demo17 - 构建了生产环境, 实现了分离生产模式和开发模式的配置
