@@ -1,23 +1,25 @@
+const path = require('path'); //公共模块
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); //生产模式使用分离代码插件
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'); //生产模式使用压缩代码插件
 
 module.exports = merge(common, {
-    mode: "production", //生产模式会将 process.env.NODE_ENV 的值设为 production。启用 FlagDependencyUsagePlugin, FlagIncludedChunksPlugin, ModuleConcatenationPlugin, NoEmitOnErrorsPlugin, OccurrenceOrderPlugin, SideEffectsFlagPlugin 和 TerserPlugin.
+    mode: "none", //生产模式会将 process.env.NODE_ENV 的值设为 production。启用 FlagDependencyUsagePlugin, FlagIncludedChunksPlugin, ModuleConcatenationPlugin, NoEmitOnErrorsPlugin, OccurrenceOrderPlugin, SideEffectsFlagPlugin 和 TerserPlugin.
     module: {
         rules: [
             {
                 test: /\.(sa|sc|c)ss$/,
+                include: path.resolve(__dirname, "src"), //include代表需要进行 loader 的目录
                 use: [
                     MiniCssExtractPlugin.loader, //生产模式使用分离代码插件
                     'css-loader',
                     'sass-loader',
-                ],
+                ]
             }
         ]
     },
-    devtool: 'source-map', //生产模式启用代码跟踪
+    devtool: 'cheap-module-source-map', //生产模式启用代码跟踪
     plugins: [
         new MiniCssExtractPlugin({ //生产模式使用分离代码插件
             filename: 'css/[name].css'

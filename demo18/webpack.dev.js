@@ -1,3 +1,4 @@
+const path = require('path'); //公共模块
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -7,11 +8,12 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.(sa|sc|c)ss$/,
+                include: path.resolve(__dirname, "src"), //include代表需要进行 loader 的目录
                 use: [
                     'style-loader', //开发模式不使用插件
                     'css-loader',
                     'sass-loader',
-                ],
+                ]
             }
         ]
     },
@@ -19,5 +21,6 @@ module.exports = merge(common, {
     devServer: { //开发模式启用服务器
         contentBase: './dist',
         port: 8080,
+        compress: true
     }
 });
