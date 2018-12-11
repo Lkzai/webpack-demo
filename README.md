@@ -47,3 +47,5 @@ demo15 - 使用SplitChunksPlugin插件, 实现了提取公共js和css
 demo16 - 使用ReactHotLoader插件, 实现了react的热替换功能
 
 demo17 - 构建了生产环境, 实现了分离生产模式和开发模式的配置
+
+demo18 - 优化了性能, 加快了构建速度
