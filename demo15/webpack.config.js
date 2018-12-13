@@ -58,7 +58,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css', //类似出口文件
-            chunkFilename: 'css/[id].css'
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g, //一个正则表达式，指示应优化\最小化的资产的名称。提供的正则表达式针对配置中ExtractTextPlugin实例导出的文件的文件名运行，而不是源CSS文件的文件名。默认为/\.css$/g

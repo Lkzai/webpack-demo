@@ -18,7 +18,9 @@ htmls.forEach((filePath) => { //遍历扫描到的页面模板路径
         })
     )
 });
-htmlCfgs.push(new CleanWebpackPlugin(['dist'])); //最后把要使用的插件放进去
+htmlCfgs.push(new CleanWebpackPlugin(['dist'], {
+    root: path.resolve(__dirname, '..'), //绝对路径的上一级目录
+})); //最后把要使用的插件放进去
 
 
 module.exports = {
